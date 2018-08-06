@@ -1,0 +1,18 @@
+{
+    "Resources": {
+	"additionLambda": {
+	    "Type": "AWS::Lambda::Function",
+	    "Properties": {
+		"Handler": "addition.lambda_handler",
+		"Role": "arn:aws:iam::683115138656:role/lambdaRoleIAM",
+		"Runtime": "python3.6",
+		"Code" : {
+		    "S3Bucket": "lambda-python-code",
+		    "S3Key": "addition.zip"
+		},
+		"Timeout": 10,
+		"MemorySize": 1280
+	    }
+	}
+    }
+}
