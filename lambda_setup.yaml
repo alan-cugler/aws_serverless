@@ -1,0 +1,18 @@
+Resources:
+  Type: "AWS::Lambda::Function"
+  Properties:
+    Code:
+      ZipFile:
+        def by10_handler(event, context):
+          x = 15
+          x = x*10
+          return x
+      Description: Accepts an integer variable, multiplies it by 10, and returns the variable.
+      FunctionName: multiplier_of_10
+      Handler: index.by10_handler
+      MemorySize: 1280
+      Role: arn:aws:iam::683115138656:role/lambdaRoleIAM
+      Runtime: python3.6
+      Timeout: 10
+
+                                                          

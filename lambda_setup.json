@@ -1,17 +1,14 @@
 {
-    "FunctionName": "",
-    "Runtime": "nodejs6.10",
-    "Role": "",
-    "Handler": "",
+    "FunctionName": "multiple_of_10",
+    "Runtime": "python3.6",
+    "Role": "arn:aws:iam::###############",
+    "Handler": "index.handler",
     "Code": {
         "ZipFile": null,
-        "S3Bucket": "",
-        "S3Key": "",
-        "S3ObjectVersion": ""
     },
-    "Description": "",
-    "Timeout": 0,
-    "MemorySize": 0,
+    "Description": "This function receives a integer variable and multiplies it by ten and returns the variable",
+    "Timeout": 5,
+    "MemorySize": 1280,
     "Publish": true,
     "VpcConfig": {
         "SubnetIds": [
