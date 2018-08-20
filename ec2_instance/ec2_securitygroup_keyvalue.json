@@ -1,0 +1,18 @@
+
+{
+    "Description": "Practice template to spin up an EC2 instance.",
+    
+    "Resources": {
+        "Ec2Instance": {
+            "Type": "AWS::EC2::Instance",
+            "Properties": {
+		"SecurityGroupIds": ["sg-053d9cde1b88e36a0"],
+                "SecurityGroups": ["TestingSecurityGroup"],
+		"KeyName": "CPC_AWS_EC2_key",
+		"ImageId": "ami-759bc50a",
+		"InstanceType": "t2.micro"
+	    }
+	}
+    }
+}
+
